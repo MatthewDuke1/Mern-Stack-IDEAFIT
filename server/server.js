@@ -8,12 +8,6 @@ const debug = require("debug")("WebTemplateStudioExpress:server");
 const http = require("http");
 const app = require("./app");
 const CONSTANTS = require("./constants");
-const mongoose = require("mongoose");
-/**
-MongoDB setup requirement
-*/
-mongoose.connect(isDev ? config.db_dev : config.db);
-mongoose.Promise = global.Promise;
 
 
 
